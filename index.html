@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet" >
+    <title>LAPORAN PRAKTIKUM</title>
+</head>
+<body>
+  <header class="Header">
+    <div class="logo">
+      <img src="assets/LOGO ITPLN.png" alt="ITPLN-LOGO">
+    </div>
+
+    <nav class="topnav">
+      <ul>
+        <li id="SWITCH">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="toggleChaosMode()">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Chaos</label>
+          </div>
+        </li>
+      </ul> 
+    </nav>
+
+  </header>
+
+  <main class="content"> 
+   <h1 class="gradient-text" id="WELCOME">- LAPORAN TEORI -</h1>
+   <h2 class="gradient-text">MIQDAD HILYA HASAN | 202331085</h2>
+
+  <div class="grid-container">
+    <div class="accordion" id="accordiongwh">
+
+      <div class="accordion-item">
+
+        <h3 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            1.	Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?
+          </button>
+        </h3>
+
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              Keduanya merupakan bahasa pemrograman yang memiliki pengaruh yang besar pada pengembangan web karena:
+              <ol type="a">
+                <li>CSS di gunakan untuk mengubah penampilan dan tata letak konten suatu web (web jadu estetik dan egonomik/nyaman).</li>
+                <li>JavaScript berperan menambahkan interaktivitas ke halaman web sehingga perubahan dinamis dapat dialami tanpa memuat ulang halaman </li>
+              </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="accordion-item">
+
+        <h3 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            2.	Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?
+          </button>
+        </h3>
+
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol type="a">
+
+              <li>
+                CSS dapat menggunakan dua metode, yaitu metode eksternal (menyambungkan file CSS dan HTML dengan 
+                <strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;path file css yang ingin digunakan&quot;&gt;</strong> ) dan langsung dalam elemen HTML 
+                (menggunakan atribut <strong>&lt;style&gt;...&lt;/style&gt;</strong>).
+              </li>
+
+              <li>
+                JavaScript dapat diintegrasikan menggunakan tag <strong>&lt;script&gt;...&lt;/script&gt;</strong>.
+              </li>
+
+            </ol>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="accordion-item">
+
+        <h3 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            3.	Jelaskan apa saja keuntungan menggunakan JavaScipt dan CSS?
+          </button>
+        </h3>
+
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            <ol type="a">
+              <li>
+                Interaktif
+              </li>
+              <li>
+                Responsive Design
+              </li>
+              <li>
+                Pengembangan yang efektif dan cepat
+              </li>
+            </ol>
+
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="accordion-item">
+
+        <h3 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            4.	Jealskan apa saja keuntungan menggunakan Bootstrap?
+          </button>
+        </h3>
+
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             <ol type="a">
+              <li>Tiap web yang di buat menjadi lebih konsisten</li>
+              <li>Siap pakai. Selama mengetahui tag/sintaks bootstrap (seperti menggunakan template)</li>
+              <li>Mudah di pelajari</li>
+             </ol>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="accordion-item">
+
+        <h3 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            5. Berikan salah satu contoh penggunaan Bootstrap lalu jelaskan apa fungsinya serta berikan screenshot hasil running di web-nya!
+          </button>
+        </h3>
+
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <div class="code-box">
+              <pre><code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;Document&lt;/title&gt;
+              &lt;link rel="stylesheet" href="assets/css/bootstrap.css"&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              &lt;div class="row mt-5"&gt;
+                  &lt;div class="col-12"&gt;
+                      &lt;div class="table-responsive"&gt;
+                          &lt;table class="table table-bordered table-striped table-hover"&gt;
+                              &lt;thead&gt;
+                                  &lt;tr&gt;
+                                      &lt;th&gt;First name&lt;/th&gt;
+                                      &lt;th&gt;Last name&lt;/th&gt;
+                                      &lt;th&gt;Email&lt;/th&gt;
+                                  &lt;/tr&gt;
+                              &lt;/thead&gt;
+                              &lt;tbody&gt;
+                                  &lt;tr&gt;
+                                      &lt;td&gt;First name&lt;/td&gt;
+                                      &lt;td&gt;Doe&lt;/td&gt;
+                                      &lt;td&gt;John@email.com&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                      &lt;td&gt;John&lt;/td&gt;
+                                      &lt;td&gt;Smith&lt;/td&gt;
+                                      &lt;td&gt;smith@email.com&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                      &lt;td&gt;Hilya&lt;/td&gt;
+                                      &lt;td&gt;Hasan&lt;/td&gt;
+                                      &lt;td&gt;9ad.miqdad@gmail.com&lt;/td&gt;
+                                  &lt;/tr&gt;
+                              &lt;/tbody&gt;
+                          &lt;/table&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+              </code></pre>
+          </div>          
+
+          <h4>SECREENSHOT HASIL:</h4>
+          <img src="assets/Screenshot 2024-11-04 164614.png" alt="SS HASIL" id="g-soal5">
+
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-slider">
+        <span>&copy; Miqdad Hilya Hasan (202331085)</span>
+        <span>&copy; Miqdad Hilya Hasan (202331085)</span>
+        <span>&copy; Miqdad Hilya Hasan (202331085)</span>
+    </div>       
+  </footer>
+
+</body>
+
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/skrip.js"></script>
+</html>
