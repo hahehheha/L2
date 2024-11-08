@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin; /* Scrollbar lebih tipis */
+    scrollbar-color: #444 #1e1e1e; /* Warna scrollbar dan background track */
+}
+
+body, html {
+    background-color: #18191b;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.Header {
+  position: fixed; /* Menjaga posisi footer tetap di layar */
+  width: 100%; /* Melebarkan footer agar memenuhi lebar layar */
+  background-image: url(vecteezy_rose-textured-damascus-steel-looks-distorted-like-dark_17741301.jpg);
+  padding: 5px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: 10; /* Pastikan footer berada di atas elemen lain jika diperlukan */
+  border-top: 0.5px solid darkgrey;
+  border-bottom: 0.5px solid darkgrey;
+  opacity: 1;
+}
+.Header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+.Header nav ul li {
+    display: inline;
+}
+#WELCOME {
+    text-align: fixed;
+    text-align: center;
+    color: azure;
+}
+#SWITCH {
+   position: fixed;
+   top: 20px;
+   right: 20px;
+}
+.Header .logo img {
+  width: 150px;
+}
+
+.content {
+  flex: 1; /* Mengisi ruang antara header dan footer */
+  overflow-y: auto; /* Scrollbar hanya di konten utama */
+  padding: 100px 20px 20px 20px; /* Padding atas untuk menghindari tumpang tindih dengan header */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.code-box {
+  background-color: #1e1e1e; /* Warna latar belakang kotak kode */
+  border: 1px solid #333; /* Batas abu-abu gelap */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 16px; /* Padding untuk ruang ekstra */
+  font-family: 'Courier New', Courier, monospace; /* Font monospace */
+  color: #f8f8f2; /* Warna teks terang */
+  overflow-x: auto; /* Scrollbar horizontal jika teks terlalu panjang */
+  line-height: 1.6; /* Spasi antar baris */
+  white-space: pre-wrap; /* Membungkus teks agar tidak terlalu melebar */
+  max-height: 300px;
+}
+
+h1 {
+  font-family: 'Custom2';
+  text-align: center;
+  color: azure;
+  text-shadow: whitesmoke;
+}
+
+h2 {
+  font-family: 'Custom3';
+  text-align: center;
+  color: azure;
+  text-shadow: whitesmoke;
+}
+h3 {
+  font-family: 'Custom1';
+}
+
+.gradient-text {
+  background: linear-gradient(35deg, #23A0B4, #0C4F6A); /* Warna gradient */
+  -webkit-background-clip: text; /* Mengklip background ke teks */
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan agar background terlihat */
+  background-clip: text; /* Untuk kompatibilitas lebih luas */
+  color: transparent;
+}
+
+#accordiongwh {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#accordiongwh .accordion-body img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar container */
+  height: auto;
+  display: block;
+}
+
+#accordiongwh .accordion-body {
+  overflow-x: auto; /* Mengaktifkan scroll horizontal */
+}
+
+
+.footer {
+  position: fixed; /* Menjaga posisi footer tetap di layar */
+  bottom: 0; /* Menempatkan footer di bagian bawah layar */
+  left: 0; /* Melebarkan footer dari kiri layar */
+  width: 100%; /* Melebarkan footer agar memenuhi lebar layar */
+  background-image: url(vecteezy_rose-textured-damascus-steel-looks-distorted-like-dark_17741301.jpg);
+  padding: 20px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: 10; /* Pastikan footer berada di atas elemen lain jika diperlukan */
+  }
+  
+  .footer-slider {
+    display: flex;
+    gap: 20px;
+    animation: slide 24s infinite;
+  }
+  
+  .footer-slider span {
+    flex: 0 0 100%;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  @keyframes slide {
+    0%, 8.33% {
+      transform: translateX(0);
+      opacity: 1;
+    } 
+    
+    33.33%, 41.67% {
+      transform: translateX(-101.5%);
+      opacity: 1;
+    } 
+    
+    66.67%, 75% {
+      transform: translateX(-203%);
+      opacity: 1;
+    } 
+    
+    91.67%, 100% {
+      transform: translateX(0);
+      opacity: 1;
+    } 
+  }
+
+  /* Scrollbar untuk Chrome, Safari, dan Edge */
+::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Warna latar belakang track scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; /* Warna tombol scrollbar */
+  border-radius: 10px;
+  border: 2px solid #1e1e1e; /* Warna background di sekitar tombol scrollbar */
+}
+
+@font-face {
+  font-family: 'Custom1';
+  src: url('/assets/font/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Custom2';
+  src: url('/assets/font/Underbold.otf');
+}
+
+@font-face {
+  font-family: 'Custom3';
+  src: url('/assets/font/pixelatedczs.ttf');
+}
