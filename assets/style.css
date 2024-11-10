@@ -178,15 +178,15 @@ h3 {
 
 @font-face {
   font-family: 'Custom1';
-  src: url('/assets/font/TitilliumWeb-Regular.ttf');
+  src: url('assets/font/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Custom2';
-  src: url('/assets/font/Underbold.otf');
+  src: url('assets/font/Underbold.otf');
 }
 
 @font-face {
   font-family: 'Custom3';
-  src: url('/assets/font/pixelatedczs.ttf');
+  src: url('assets/font/pixelatedczs.ttf');
 }
